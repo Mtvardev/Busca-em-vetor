@@ -1,3 +1,3 @@
-# APS AV1 2020.2
- Questão Aps-programação estruturada com linguagem C.
-Trabalho supervionado da faculdade,cadastro de  pessoas com nome,idade e sexo, e em seguida faço busca por idade ou por sexo dessas pessoas cadastrada, algoritmo bem simples.
+# APS  2020.2
+  Aps-Diciplina faculdade programação estruturada  e Algoritmos II codigo fonte linguagem C.
+Trabalho supervionado da faculdade.
