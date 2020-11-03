@@ -3,7 +3,6 @@
 #define TAM 10
 main()
 {
-    int *v1,*v2,ctpar,ctimp,i,vet [10];
     int *v1,*v2,ctpar,ctimp,i,vet [TAM];
     ctpar=1;
     ctimp=1;
