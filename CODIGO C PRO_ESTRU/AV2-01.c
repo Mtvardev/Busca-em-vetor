@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
+#define TAM 10
 main()
 {
     int *v1,*v2,ctpar,ctimp,i,vet [10];
+    int *v1,*v2,ctpar,ctimp,i,vet [TAM];
     ctpar=1;
     ctimp=1;
-    for(i=0;i<10;i++)
+    for(i=0;i<TAM;i++)
     {
      printf("Digite numero da posicao %d:",i+1); scanf("%d",&vet[i]);
      if(vet[i] %2==0)
@@ -20,7 +22,7 @@ main()
     v2=(int*)malloc(ctpar*sizeof(int));
     ctpar=0;
     ctimp=0;
-    for(i=0;i<10;i++)
+    for(i=0;i<TAM;i++)
     {
         if(vet[i] %2==0)
         {
