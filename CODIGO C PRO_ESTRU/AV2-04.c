@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include<locale.h>
 #define TAM 100
+
 void Troca(char *TrocaVogais);
 void Exibe(char *MostraFrase);
+
 main()
 {
-  setlocale(LC_ALL,"Portuguese");
   char frase[TAM];
        printf("\nDigite uma frase(Max:100 car.):");
        fgets(frase,TAM,stdin);
