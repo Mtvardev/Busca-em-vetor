@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define TAM 5
-
 main(){
-
-
   int i,j,x,Mat[TAM][TAM];
   char booleano=0;
 

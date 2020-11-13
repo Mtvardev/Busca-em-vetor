@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #define TAM 100
-
 void Troca(char *TrocaVogais);
 void Exibe(char *MostraFrase);
 

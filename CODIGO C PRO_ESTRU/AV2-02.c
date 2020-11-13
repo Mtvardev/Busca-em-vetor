@@ -1,39 +1,48 @@
 #include <stdio.h>
-#include  <stdlib.h>
+#include <stdlib.h>
+#include <stdbool.h>
 #define TAM 10
-void Verifica(int *c,int *vet);
 void Result(int *vet);
 main()
 {
-    int vet10[TAM],chave;
-           
-           Verifica(&chave,&vet10);
-           Result(&vet10);
-}       
-void Verifica(int *c,int *vet)
-{
-    for(int i=0;i<TAM;i++)
-   {
-        printf("Numero p/ posicao %d:.",i+1);scanf("%d",&c);
-        for(int i=0;i<TAM;i++)
-       {
-           if(vet[i]==c)
+  int vet10[TAM], chave;
+  bool logico;
+  for (int i = 0; i < TAM; i++)
+  {
+    printf("Numero p/ posicao %d:.", i);
+    scanf("%d", &chave);
+    for (int j = 0; j < TAM; j++)
+    {
+      if (vet10[j] == chave)
+      {
+        do
+        {
+          printf("\nTente outro numero p/ posicao |%d|:.", i);
+          scanf("%d", &chave);
+          for (j = 0; j < TAM; j++)
+          {
+            if (vet10[j] == chave)
             {
-               do
-               {
-                 printf("\nTente outro numero p/ posicao %d:.",i+2);scanf("%d",&c);
-               }while(vet[i]==c);
+              logico = true;
+              break;
             }
-        }
-          vet[i]=c;
+            else
+            {
+              logico = false;
+            }
+          }
+        }while (logico);
+      }
     }
+    vet10[i] = chave;
+  }
   printf("Valores diferentes:");
+  Result(&vet10);
 }
 void Result(int *vet)
 {
-    for(int i=0;i<TAM;i++)
-        {
-            printf("\n%d",vet[i]);
-        }
-} 
-   
+  for (int i = 0; i < TAM; i++)
+  {
+    printf("\n%d", vet[i]);
+  }
+}

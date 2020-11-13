@@ -2,7 +2,6 @@
 #include <stdio.h>
 #define TAM 25
 #define TAM2 4
-
 void Menu();
 void Cadastro();
 void Listar();
